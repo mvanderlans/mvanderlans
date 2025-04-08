@@ -11,30 +11,30 @@ body:
       label: Who is the primary beneficiary of this work?
       description: Please select your business group from the dropdown below so we can better track our issues. 
       options: 
-        - Sales - Tools and Efficiency 
-        - Sales - Operations
-        - Sales - Strategy and Analytics
-        - Sales - Corporate and Demand Marketing
-        - Sales - Deals Desk
-        - Sales - Go To Market
-        - Sales - Channel Partners
-        - Sales
-        - CS - Support
-        - CS - Professional Services
-        - CS - Customer Outcomes
-        - CS - Analytics
-        - CS - Operations
-        - Customer Success
-        - Business Systems
-        - Product Management
-        - Finance
-        - Gitcoin
-        - Data Engineering and Infrastructure
-        - Business Development
-        - Security
-        - Procurement
-        - Legal 
-        - Not Listed
+      - Sales - Tools and Efficiency 
+      - Sales - Operations
+      - Sales - Strategy and Analytics
+      - Sales - Corporate and Demand Marketing
+      - Sales - Deals Desk
+      - Sales - Go To Market
+      - Sales - Channel Partners
+      - Sales
+      - CS - Support
+      - CS - Professional Services
+      - CS - Customer Outcomes
+      - CS - Analytics
+      - CS - Operations
+      - Customer Success
+      - Business Systems
+      - Product Management
+      - Finance
+      - Gitcoin
+      - Data Engineering and Infrastructure
+      - Business Development
+      - Security
+      - Procurement
+      - Legal 
+      - Not Listed
     validations: 
       required: true
   - type: dropdown
@@ -42,9 +42,9 @@ body:
     attributes:
       label: Priority Level
       options:
-        - "High"
-        - "Medium"
-        - "Low"
+      - "High"
+      - "Medium"
+      - "Low"
     validations:
       required: true
   - type: textarea
