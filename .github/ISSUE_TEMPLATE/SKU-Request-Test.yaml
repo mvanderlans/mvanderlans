@@ -11,7 +11,8 @@ body:
       label: Who is the primary beneficiary of this work?
       description: Please select your business group from the dropdown below so we can better track our issues. 
       options: 
-      - Sales - Tools and Efficiency 
+      - Sales 
+      - Tools and Efficiency 
       - Sales - Operations
       - Sales - Strategy and Analytics
       - Sales - Corporate and Demand Marketing
