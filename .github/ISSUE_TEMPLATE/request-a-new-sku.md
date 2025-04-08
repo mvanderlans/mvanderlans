@@ -1,5 +1,5 @@
 ---
-name: Request a new SKU
+name: Also Old
 about: Request a new SKU to be added.
 title: ''
 labels: ''
