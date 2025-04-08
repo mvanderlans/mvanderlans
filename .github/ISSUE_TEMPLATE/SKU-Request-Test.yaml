@@ -1,4 +1,4 @@
-name: Request a new SKU
+name: Old
 description: Request a new SKU to be added. 
 title: "SKU Request: "
 labels: ["SKU", "enhancement", "salesforce - cpq", "For Review", "Not Started"]
