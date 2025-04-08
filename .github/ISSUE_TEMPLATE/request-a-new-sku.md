@@ -1,0 +1,236 @@
+---
+name: Request a new SKU
+about: Request a new SKU to be added.
+title: ''
+labels: ''
+assignees: ''
+
+---
+
+title: "SKU Request: "
+labels: ["SKU", "enhancement", "salesforce - cpq", "For Review", "Not Started"]
+assignees: 
+  - marinocequena
+body:
+  - type: dropdown
+    id: business-group
+    attributes:
+      label: Who is the primary beneficiary of this work?
+      description: Please select your business group from the dropdown below so we can better track our issues. 
+      options: 
+        - Sales - Tools and Efficiency 
+        - Sales - Operations
+        - Sales - Strategy and Analytics
+        - Sales - Corporate and Demand Marketing
+        - Sales - Deals Desk
+        - Sales - Go To Market
+        - Sales - Channel Partners
+        - Sales
+        - CS - Support
+        - CS - Professional Services
+        - CS - Customer Outcomes
+        - CS - Analytics
+        - CS - Operations
+        - Customer Success
+        - Business Systems
+        - Product Management
+        - Finance
+        - Gitcoin
+        - Data Engineering and Infrastructure
+        - Business Development
+        - Security
+        - Procurement
+        - Legal 
+        - Not Listed
+    validations: 
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+    validations:
+      required: true
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      placeholder: Tell us what you see!
+      value: |
+        As a [persona],
+        /optional/ When I am [in a certain circumstance],
+        I can [what?],
+        so that [why?]
+    validations:
+      required: true
+  - type: input
+    id: product-name
+    attributes:
+      label: Product Name
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Please provide a product description that will show on the Quote output."
+  - type: input
+    id: live-date
+    attributes:
+      label: Date the product will be live
+    validations:
+      required: true
+  - type: input
+    id: sku
+    attributes:
+      label: SKU
+    validations:
+      required: true
+  - type: input
+    id: list-price
+    attributes:
+      label: List Price
+    validations:
+      required: true
+  - type: dropdown
+    id: list-price-editable
+    attributes:
+      label: Is List Price Editable?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: dropdown
+    id: prorate
+    attributes:
+      label: Is Prorated?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: input
+    id: additional-price-details
+    attributes:
+      label: Additional Price Details
+  - type: input
+    id: discounting-rules
+    attributes:
+      label: Nonstandard Discounting Rules
+  - type: dropdown
+    id: product-family
+    attributes:
+      label: Product/SKU Family
+      options:
+        - Add-Ons
+        - Advanced Security
+        - External Bundle
+        - GHAE
+        - GitHub Enterprise
+        - GitHub Enterprise Cloud
+        - GitHub Enterprise Server
+        - GitHub Team
+        - Insights
+        - Internal Bundle
+        - Learning Lab
+        - Legacy
+        - Metered Billing
+        - Metered Forecasting
+        - Professional Services
+        - Semmle Legacy
+        - Services
+        - Support
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: Is License?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: dropdown
+    id: seat
+    attributes:
+      label: Is Seat?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: dropdown
+    id: renewable
+    attributes:
+      label: Is Renewable?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Standalone, Bundle or Add On? 
+      options:
+        - Standalone
+        - Bundle
+        - Add On
+    validations:
+      required: true
+  - type: dropdown
+    id: entity-type
+    attributes:
+      label: Billing Entity Type
+      options:
+        - "Cloud"
+        - "Server"
+        - "Enterprise Account" 
+        - "Unified"
+        - "Azure"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: addon-parent
+    attributes:
+      label: (If Add On) Parent Product
+  - type: input
+    id: addon-quantity
+    attributes:
+      label: (If Add On) Quantity Guidelines
+  - type: dropdown
+    id: addon-renewed
+    attributes:
+      label: (If Add On) Is Automatically Renewed?
+      options:
+        - "No"
+        - "Yes"
+  - type: input
+    id: arr-guidance
+    attributes:
+      label: ARR Guidance
+  - type: input
+    id: approval-matrix
+    attributes:
+      label: Approval Matrix Changes / Rules
+  - type: input
+    id: template-guidelines
+    attributes:
+      label: Quote Template Guidelines / Changes to the T&C(s)
+  - type: input
+    id: nonstandard-business-guidance
+    attributes:
+      label: Nonstandard Business Guidance
+  - type: textarea
+    id: impacts
+    attributes:
+      label: Impacts
+      description: Add any impacted Users or Groups to the defaults below. 
+      value: |
+        @noprobllama @chadjlucas @shannonhines @github\ar @CPQ007 @patil-pramod @dianeenriquez @ryan-brocklesby @incentwiz @oviddawen @smlisk0630
