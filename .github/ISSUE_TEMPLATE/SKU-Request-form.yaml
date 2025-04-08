@@ -140,6 +140,35 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: revenue-play
+    attributes:
+      label: (If Professional Services) Revenue Play
+      options:
+        - AI
+        - Platform
+        - Security
+  - type: dropdown
+    id: offering-product-area
+    attributes:
+      label: (If Professional Services) Offerings Product Area
+      options:
+        - AI & Data
+        - Community
+        - Compute Products
+        - Core Productivity
+        - Platform & Enterprise
+        - Security Products   
+  - type: dropdown
+    id: services-grouping
+    attributes:
+      label: (If Professional Services) Services Grouping
+      options:
+        - Training
+        - CodeQL
+        - Advisory
+        - GHAS
+        - Copilot
+  - type: dropdown
     id: license
     attributes:
       label: Is License?
