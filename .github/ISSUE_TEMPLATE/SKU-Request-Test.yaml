@@ -5,7 +5,7 @@ labels: ["SKU", "enhancement", "salesforce - cpq", "For Review", "Not Started"]
 assignees: 
   - marinocequena
 body:
-  - type: dropdown
+- type: dropdown
     id: business-group
     attributes:
       label: Who is the primary beneficiary of this work?
