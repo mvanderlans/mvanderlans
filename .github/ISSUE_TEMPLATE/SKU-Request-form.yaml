@@ -109,7 +109,7 @@ body:
   - type: input
     id: additional-price-details
     attributes:
-      label: If other than a single standard List Price, provide Pricing details here:
+      label: If other than a single standard List Price, provide Pricing details here
   - type: dropdown
     id: discounting-rules
     attributes:
