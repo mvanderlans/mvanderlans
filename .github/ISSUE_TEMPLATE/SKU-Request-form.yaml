@@ -73,13 +73,13 @@ body:
   - type: input
     id: live-date
     attributes:
-      label: Date the product will be live
+      label: Target Go-Live Date
     validations:
       required: true
   - type: input
     id: sku
     attributes:
-      label: SKU
+      label: SKU (Product Code)
     validations:
       required: true
   - type: input
@@ -109,11 +109,14 @@ body:
   - type: input
     id: additional-price-details
     attributes:
-      label: Additional Price Details
-  - type: input
+      label: If more than a single standard List Price, please provide all Pricing Requirements here:
+  - type: dropdown
     id: discounting-rules
     attributes:
-      label: Nonstandard Discounting Rules
+      label: Is Discountable?
+      options: 
+       - "No"
+       - "Yes"
   - type: dropdown
     id: product-family
     attributes:
@@ -221,38 +224,19 @@ body:
   - type: input
     id: addon-parent
     attributes:
-      label: (If Add On) Parent Product
+      label: (If Add On) Parent Product:
   - type: input
     id: addon-quantity
     attributes:
-      label: (If Add On) Quantity Guidelines
-  - type: dropdown
-    id: addon-renewed
-    attributes:
-      label: (If Add On) Is Automatically Renewed?
-      options:
-        - "No"
-        - "Yes"
-  - type: input
-    id: arr-guidance
-    attributes:
-      label: ARR Guidance
-  - type: input
-    id: approval-matrix
-    attributes:
-      label: Approval Matrix Changes / Rules
+      label: (If Add On) Quantity Requirements:
   - type: input
     id: template-guidelines
     attributes:
-      label: Quote Template Guidelines / Changes to the T&C(s)
-  - type: input
-    id: nonstandard-business-guidance
-    attributes:
-      label: Nonstandard Business Guidance
+      label: Detail any required changes for Quote Template or T&C(s) here:
   - type: textarea
     id: impacts
     attributes:
       label: Impacts
-      description: Add any impacted Users or Groups to the defaults below. 
+      description: Add any impacted Users or Groups to the defaults below.
       value: |
         @noprobllama @chadjlucas @shannonhines @github\ar @CPQ007 @patil-pramod @dianeenriquez @ryan-brocklesby @incentwiz @oviddawen @smlisk0630
