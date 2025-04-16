@@ -224,15 +224,15 @@ body:
   - type: input
     id: addon-parent
     attributes:
-      label: (If Add On) Parent Product:
+      label: (If Add On) Parent Product
   - type: input
     id: addon-quantity
     attributes:
-      label: (If Add On) Quantity Requirements:
+      label: (If Add On) Quantity Requirements
   - type: input
     id: template-guidelines
     attributes:
-      label: Detail any required changes for Quote Template or T&C(s) here:
+      label: Detail any required changes for Quote Template or T&C(s) here
   - type: textarea
     id: impacts
     attributes:
