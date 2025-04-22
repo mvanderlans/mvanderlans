@@ -229,6 +229,7 @@ body:
     id: addon-quantity
     attributes:
       label: (If Add On) Quantity Requirements
+      placeholder: Consider potential default quantity, quantity editability, matching quantity to bundle parent, etc.
   - type: input
     id: template-guidelines
     attributes:
