@@ -219,8 +219,19 @@ body:
         - "Unified"
         - "Azure"
         - "Other"
-    validations:
-      required: true
+  - type: dropdown
+    id: business-line
+    attributes:
+      label: Business Line
+      options:
+        - "GitHub Enterprise"
+        - "GitHub Enterprise Cloud"
+        - "GitHub Enterprise Server" 
+        - "GitHub Team"
+        - "GitHub Services"
+        - "Semmle Legacy"
+        - "Third Party"
+        - "Other"
   - type: input
     id: addon-parent
     attributes:
