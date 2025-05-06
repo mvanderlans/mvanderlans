@@ -236,7 +236,7 @@ body:
     id: addon-parent
     attributes:
       label: (If Add On) Parent Product
-  - type: input
+  - type: textarea
     id: addon-quantity
     attributes:
       label: (If Add On) Quantity Requirements
