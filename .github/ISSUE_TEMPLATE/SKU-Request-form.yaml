@@ -242,9 +242,9 @@ body:
       label: (If Add On) Quantity Requirements
       placeholder: |
         Consider the following examples:
-        potential default quantity 
-        quantity editability 
-        matching quantity to bundle parent
+        - Potential Default Quantity 
+        - Quantity Editability 
+        - Match Quantity to Bundle Parent
   - type: input
     id: template-guidelines
     attributes:
