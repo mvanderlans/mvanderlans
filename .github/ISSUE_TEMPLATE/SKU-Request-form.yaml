@@ -241,6 +241,7 @@ body:
     attributes:
       label: (If Add On) Quantity Requirements
       placeholder: Consider the following examples: 
+      value: |
       potential default quantity
       quantity editability
       matching quantity to bundle parent
