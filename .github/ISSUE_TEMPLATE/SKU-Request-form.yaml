@@ -106,7 +106,7 @@ body:
         - "Yes"
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: additional-price-details
     attributes:
       label: If other than a single standard List Price, provide Pricing details here
