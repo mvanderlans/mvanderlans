@@ -240,7 +240,7 @@ body:
     id: addon-quantity
     attributes:
       label: (If Add On) Quantity Requirements
-      value: |
+      placeholder: |
         Consider the following examples:
         potential default quantity 
         quantity editability 
