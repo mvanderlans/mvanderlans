@@ -109,7 +109,7 @@ body:
   - type: textarea
     id: additional-price-details
     attributes:
-      label: If other than a single standard List Price, provide pricing details here:
+      label: If other than a single standard List Price, provide pricing details here
   - type: dropdown
     id: discounting-rules
     attributes:
@@ -120,7 +120,7 @@ body:
   - type: textarea
     id: discounting-reqs
     attributes:
-      label: If any speical discounting rules, provide here:
+      label: If any speical discounting rules, provide here
       placeholder: |
         Consider the following examples:
         - Maximum Discount Allowed
