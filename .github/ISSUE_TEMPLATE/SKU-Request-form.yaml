@@ -3,8 +3,14 @@ description: Request a new SKU to be added.
 title: "SKU Request: "
 labels: ["SKU", "enhancement", "salesforce - cpq", "For Review", "Not Started"]
 assignees: 
-  - marinocequena
+  - @mvanderlans
 body:
+  - type: input
+    id: live-date
+    attributes:
+      label: Target Go-Live Date
+    validations:
+      required: true
   - type: dropdown
     id: business-group
     attributes:
@@ -65,23 +71,17 @@ body:
       label: Product Name
     validations:
       required: true
-  - type: textarea
-    id: description
-    attributes:
-      label: Description
-      description: "Please provide a product description that will show on the Quote output."
-  - type: input
-    id: live-date
-    attributes:
-      label: Target Go-Live Date
-    validations:
-      required: true
   - type: input
     id: sku
     attributes:
       label: SKU (Product Code)
     validations:
       required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Please provide a product description that will show on the Quote output."
   - type: input
     id: list-price
     attributes:
@@ -109,7 +109,7 @@ body:
   - type: textarea
     id: additional-price-details
     attributes:
-      label: If other than a single standard List Price, provide Pricing details here
+      label: If other than a single standard List Price, provide pricing details here
   - type: dropdown
     id: discounting-rules
     attributes:
@@ -117,6 +117,15 @@ body:
       options: 
        - "No"
        - "Yes"
+  - type: textarea
+    id: discounting-reqs
+    attributes:
+      label: Provide speical discounting rules here, if any
+      placeholder: |
+        Consider the following examples:
+        - Maximum Discount Allowed
+        - Quantity Based Discounting
+        - Term Based Discounting
   - type: dropdown
     id: product-family
     attributes:
@@ -223,6 +232,11 @@ body:
         - "Yes"
     validations:
       required: true
+  - type: input
+    id: renewalproduct
+    attributes:
+      label: Renewal Product
+      placeholder: Product that replaces this SKU on Renewal
   - type: dropdown
     id: type
     attributes:
@@ -233,30 +247,6 @@ body:
         - Add On
     validations:
       required: true
-  - type: dropdown
-    id: entity-type
-    attributes:
-      label: Billing Entity Type
-      options:
-        - "Cloud"
-        - "Server"
-        - "Enterprise Account" 
-        - "Unified"
-        - "Azure"
-        - "Other"
-  - type: dropdown
-    id: business-line
-    attributes:
-      label: Business Line
-      options:
-        - "GitHub Enterprise"
-        - "GitHub Enterprise Cloud"
-        - "GitHub Enterprise Server" 
-        - "GitHub Team"
-        - "GitHub Services"
-        - "Semmle Legacy"
-        - "Third Party"
-        - "Other"
   - type: input
     id: addon-parent
     attributes:
@@ -270,6 +260,17 @@ body:
         - Potential Default Quantity 
         - Quantity Editability 
         - Match Quantity to Bundle Parent
+  - type: dropdown
+    id: entity-type
+    attributes:
+      label: Billing Entity Type
+      options:
+        - "Cloud"
+        - "Server"
+        - "Enterprise Account" 
+        - "Unified"
+        - "Azure"
+        - "Other"
   - type: input
     id: template-guidelines
     attributes:
@@ -280,4 +281,4 @@ body:
       label: Impacts
       description: Add any impacted Users or Groups to the defaults below.
       value: |
-        @noprobllama @chadjlucas @shannonhines @github\ar @CPQ007 @patil-pramod @dianeenriquez @ryan-brocklesby @incentwiz @oviddawen
+        @noprobllama @chadjlucas @shannonhines @github\ar @CPQ007 @patil-pramod @dianeenriquez @incentwiz @oviddawen @mvanderlans @anirudh-jajodia @madelynsullivan @andrewsyooniverse @cardigancat @elizabeth-c-mc
