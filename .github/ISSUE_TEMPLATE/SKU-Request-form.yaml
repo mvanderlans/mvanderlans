@@ -3,7 +3,7 @@ description: Request a new SKU to be added.
 title: "SKU Request: "
 labels: ["SKU", "enhancement", "salesforce - cpq", "For Review", "Not Started"]
 assignees: 
-  - @mvanderlans
+  - mvanderlans
 body:
   - type: input
     id: live-date
